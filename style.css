@@ -252,6 +252,15 @@ figcaption	{
 	font-style: bold;
 }
 
+figcaption a	{
+	text-decoration: none;
+	color: white;
+}
+
+figcaption a:hover	{
+	border-bottom: 2px solid white;
+}
+
 
 .whatwedo	{
 	display: block;
