@@ -1,0 +1,356 @@
+@charset "UTF-8";
+
+/*
+ * style.css
+ */
+ 
+ /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+ u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* End of Reset */
+
+@import url(http://fonts.googleapis.com/css?family=News+Cycle:400,700);
+
+html	{
+	background-color: #FFCC00;
+	font-size: small;
+	font-family: "News Cycle", sans-serif;
+	box-sizing: border-box;
+}
+
+body	{
+	width: 80%;
+	background-color: white;
+	margin-left: auto;
+	margin-right: auto;
+	color: black;
+		
+}
+
+header	{
+	height: 150px;
+	position: relative;
+		
+}
+
+header img	{
+	float: left;
+	padding: 5px;	
+}
+
+h1	{
+	font-size: 400%;
+	font-weight: bold;
+	padding-left: 20px;
+	padding-top: 40px;	
+}
+
+
+#toplinks {
+	position: absolute;
+	right: 20px;
+	top: 20px;	
+}
+
+#toplinks a	{
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	background-color: #0B8459;
+	border-radius: 10px;
+	border: 2px solid #187544;	
+	padding: 5px;
+}
+
+nav	{
+	position: absolute;
+	top: 120px;
+	left: 0;
+	width: 100%;
+	border-bottom: 2px solid #ccc;
+	background: #f9f9f9;
+	z-index: 10;
+	font-size: 120%;
+	font-weight: bold;
+}
+
+nav ul	{
+	list-style: none;
+	margin: 0;
+	padding: 0.4em;	
+}
+
+nav li	{
+	float: left;	
+	margin-right: 20px;
+	text-align: center;
+}
+
+nav li a	{
+	display: block;
+	background-color: white;
+	border: 1px solid #0B8459;
+	padding: .5em;
+	text-decoration: none;
+	color: #0B8459;
+}
+
+nav li ul	{
+	position: absolute;
+	display: none;
+}
+
+nav li a:hover	{
+	background-color: #4C494A;
+	color: white;
+	text-decoration: none;
+}
+
+nav li ul	{
+	display: none;
+	position: absolute;	
+	padding: 0;
+}
+
+nav li:hover	ul {
+	display: block;	
+}
+
+nav li li	{
+	float: none;
+	border-bottom: 1px solid #0B8459;
+}
+nav li li a	{
+	border: 0;
+	border-left: 1px solid #0B8459;
+	border-right: 1px solid #0B8459;
+}
+	
+/* Side Bar */
+aside	{
+	clear: both;
+	float: left;
+	width: 200px;
+	height: 550px;
+	background-color: #0B8459;
+	position: relative;
+		
+}
+
+#callout{
+	margin-top: 30px;
+	position: absolute;
+	bottom: 25px;
+	left: 10px;
+}
+
+blockquote	{
+	font-size: 110%;
+	padding-left: 10px;
+	padding-right: 20px;
+	color: white; 
+	font-style: italic;
+}
+
+#callout p{
+	padding-left: 10px;
+	padding-right: 20px;	
+	padding-top: 10px;
+	font-size: 100%;
+	color: white;
+}
+
+aside img	{
+	padding-left: 20px;
+	padding-top: 110px;	
+}
+
+aside a	{
+	text-decoration: none;
+	color: #187544;
+	font-weight: bold;
+	background-color: white;
+	border-radius: 10px;
+	border: 2px solid #187544;	
+	padding: 10px;
+
+}
+
+#donate	{
+	position: absolute;
+	top: 40px;
+	left: 38px;
+}
+
+
+/*Main Content*/
+
+
+img.homeimg 	{
+	display: block;
+	padding-top: 30px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.whatwedo	{
+	display: block;
+	margin-left: 10px;
+	position: relative;
+	left: 20px;
+}
+
+h2	{
+	font-size: 200%;
+	font-weight: bold;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+p	{
+	font-size: 120%;	
+	padding-left: 10px;
+	padding-right: 50px;
+	padding-top: 10px;
+}
+
+section#main ul	{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+section#main li	{
+	display: inline-block;
+	padding-right: 35px;
+	line-height: 2em;
+
+}
+
+#topics	{
+	margin-left: 20px;
+}	
+
+/* News */
+
+.news	{
+	clear: both;
+	display: block;
+	padding-left: 10px;
+	border-top: 2px solid #CCCCCC;
+}	
+
+h3	{
+	font-size: 130%;
+	text-decoration: underline;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+
+
+article	{
+	float: left;
+	width: 300px;
+	margin-left: 10px;
+	line-height: 1.4em;
+	
+}
+
+#newsarticle	{
+	display: block;
+	float: left;	
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+iframe	{
+	padding-bottom: 40px;	
+}
+
+img#bully 	{
+	padding-bottom: 16px;	
+}
+
+footer	{
+	clear: both;	
+	background-color: #0B8459;
+	border-top: 2px solid #CCCCCC;
+	height: 100px;
+	font-size: 75%;
+	position: relative;
+}
+
+footer ul	{
+	margin-bottom: 20px;
+	margin-top: 20px;
+		
+}
+
+footer li	{
+	float: left;
+	padding-left: 20px;
+	
+}
+
+li p, footer h4	{
+	padding-top: 2px;
+	padding-bottom: 0;
+		
+}
+
+h4	{
+	padding-left: 10px;	
+}
+
+p#copyright	{
+	position: absolute;
+	text-align: center;
+	bottom: 10px;
+	left: 20px;
+	font-weight: bold;	
+}
